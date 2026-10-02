@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Movie Night</title>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600&display=swap" rel="stylesheet">
+<link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="container top">
+            <div class="logo">Movie<span>Night</span></div>
+            <button id="themeBtn">
+                <span id="themeIcon"></span>
+                <span id="themeText">Dark</span>
+            </button>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <h1>Find something worth watching tonight.</h1>
+            <p>A small collection of well-loved films. Search by title, pick a genre or sort by rating.</p>
+        </div>
+
+        <div class="controls">
+            <div class="search">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg>
+                <input type="text" id="searchBox" placeholder="Search movies by title">
+            </div>
+            <div class="sort">
+                <select id="sortBox">
+                    <option value="default">Sort: Default</option>
+                    <option value="high">Rating: High to low</option>
+                    <option value="low">Rating: Low to high</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="genreBar"></div>
+        <p id="count"></p>
+        <div id="movieGrid"></div>
+    </div>
+
+    <footer>Movie Night. Made by <b>Tirthesh Jain</b> for CODING NINJAS 10X SRM task.</footer>
+</body>
+<script src="index.js"></script>
+</html>
